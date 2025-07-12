@@ -13,8 +13,7 @@ import {
   Thread,
   Window,
 } from "stream-chat-react";
-import { EmojiPicker } from "stream-chat-react/emojis";
-import { SearchIndex } from "emoji-mart";
+
 import { StreamChat } from "stream-chat";
 import ChatLoader from "../components/ChatLoader";
 import CallButton from "../components/CallButton";
@@ -95,8 +94,7 @@ const ChatPage = () => {
       <Chat client={chatClient}>
         <Channel
           channel={channel}
-          EmojiPicker={EmojiPicker}
-          emojiSearchIndex={SearchIndex}
+          
         >
           <div className="w-full relative">
             <CallButton handleVideoCall={handleVideoCall} />
